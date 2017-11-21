@@ -1,0 +1,96 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	width: 200px;
+}
+
+.img0{
+	float: left;
+	margin-right: 20px;
+}
+
+
+.img11{
+	position: relative;
+	left: -200px;
+}
+
+.img2{
+	position: relative;
+	left: -180px;
+}
+
+.img22{
+	position: relative;
+	left: -380px;
+}
+
+.img3{
+	position: relative;
+	left: -360px;
+}
+
+.img33{
+	position: relative;
+	left: -560px;
+}
+
+.img4{
+	position: relative;
+	top: -260px;
+	right: -680px;
+}
+
+.img44{
+	position: relative;
+	top: -260px;
+	right: -480px;
+}
+
+.img5{
+	position: relative;
+	top: -130px;
+}
+
+.img55{
+	position: relative;
+	top: -120px;
+	right: 200px;
+}
+
+.img6{
+	position: relative;
+	top: -130px;
+	right: 200px;
+}
+
+.img7{
+	position: relative;
+	top: -130px;
+	right: 160px;
+}
+
+.img77{
+	position: relative;
+	top: -130px;
+	right: 360px;
+}
+
+.img8{
+	position: relative;
+	top: -260px;
+	right: 320px;
+}
+
+.img9{
+	position: relative;
+	top: -260px;
+	right: -900px;
+}
+
+.img11, .img22 ,.img33, .img44, .img55, .img66, .img77{
+	;
+}
