@@ -3,118 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>师大</title>
-    <link href="css/ShiDa.css">
-    <style>
-        ul,ol li  {
-            list-style: none;
-        }
-        a{
-            text-decoration: none;
-        }
-        *{
-            padding:0;
-            margin:0;
-        }
-        #top{
-            height: 162px;
-            background-color: orange;
-        }
-        #contain{
-            background-color: #6f6f6f;
-        }
-        #img{
-            margin: 0 auto;
-            width: 1200px;
-            height: 397px;
-            background-color: burlywood;
-        }
-        #head{
-            margin:0 auto;
-            height: 162px;
-            width: 1000px;
-            background-color: aqua;
-            position: relative;
-        }
-        #logo{
-            position: relative;
-            top:10px;
-        }
-        .search_btn{
-            width:  45px;
-            height:35px;
-            border:1px solid #b6b6b6;
-            background: url(images/search_btn.gif);
-            background-color: white;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .keyword{
-            height: 33px;
-            line-height: 31px;
-            width: 200px;
-            border: 1px solid #6f6f6f;
-        }
-        #head_right{
-            float: right;
-            position: relative;
-            top: 10px;
-        }
-        #head_right span a{
-            color:orangered;
-            font-size: 12px;
-        }
-        #logo{
-            padding-top:2px;
-            float: left;
-        }
-        .search_btn{
-                position: relative;
-                left: 0px;
-                top:11px;
-        }
-        #list{
-            position: absolute;
-        }
-        #li{
-            position: relative;
-            top: 113px;
-            left:40px;
-        }
-        #li li{
-            float: left;
-            height: 50px;
-            width: 100px;
-
-            text-align: center;
-        }
-        #li li a{
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 50px;
-        }
-        #li li a:hover{
-            color: white;
-        }
-        #li li img{
-            position: relative;
-            top: -8px;
-        }
-        #lis{
-
-        }
-        #lis li{
-            text-align: left;
-            width: 120px;
-            padding-left: 10px;
-            background-color: cornflowerblue;
-            /*background-color: blue;*/
-        }
-        #lis li a{
-            font-weight: 400;
-            color: white;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/ShiDa.css" type="text/css">
 </head>
 <body>
 <div id="body">
@@ -132,9 +21,11 @@
             </div>
             <div id="list">
                 <ul id="li">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">学校概况</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li><a href="#">首页</a>
+                        <ul class="lis"></ul>
+                    </li>
+                    <li onmouseover="show(1)" onmouseout="hid(1)"><a href="#" >学校概况</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">学校简介</a></li>
                             <li><a href="#">学科专业</a></li>
                             <li><a href="#">治理架构</a></li>
@@ -144,16 +35,16 @@
                             <li><a href="#">校园地图</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">机构设置</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li onmouseover="show(2)" onmouseout="hid(2)"><a href="#" >机构设置</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">教学单位</a></li>
                             <li><a href="#">管理服务</a></li>
                             <li><a href="#">附属单位</a></li>
                             <li><a href="#">汇华学院</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">人才培养</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li onmouseover="show(3)" onmouseout="hid(3)"><a href="#" >人才培养</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">师资队伍</a></li>
                             <li><a href="#">本科生教育</a></li>
                             <li><a href="#">研究生教育</a></li>
@@ -162,8 +53,8 @@
                             <li><a href="#">中外合作办学</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">科学研究</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li onmouseover="show(4)" onmouseout="hid(4)"><a href="#">科学研究</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">科学研究平台</a></li>
                             <li><a href="#">自然科学与技术</a></li>
                             <li><a href="#">人文与社会科学</a></li>
@@ -171,8 +62,8 @@
                             <li><a href="#">学术期刊</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">招生就业</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li onmouseover="show(5)" onmouseout="hid(5)"><a href="#">招生就业</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">本科生招生</a></li>
                             <li><a href="#">研究生招生</a></li>
                             <li><a href="#">继续教育招生</a></li>
@@ -180,9 +71,11 @@
                             <li><a href="#">就业服务</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">人才招聘</a><img src="images/nav.gif"></li>
-                    <li><a href="#">公共服务</a><img src="images/nav.gif">
-                        <ul id="lis">
+                    <li><a href="#">人才招聘</a>
+                        <ul class="lis"></ul>
+                    </li>
+                    <li onmouseover="show(7)" onmouseout="hid(7)"><a href="#">公共服务</a><img src="images/nav.gif">
+                        <ul class="lis">
                             <li><a href="#">本科生服务</a></li>
                             <li><a href="#">研究生服务</a></li>
                             <li><a href="#">行政事务服务</a></li>
@@ -192,15 +85,28 @@
                             <li><a href="#">网络服务</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">校友会</a></li>
-
+                    <li><a href="#">校友会</a>
+                        <ul class="lis"></ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <div id="contain">
-        <div id="img">
-
+        <div class="img">
+            <a href="#" style="display: block"><img src="images/0.gif" ></a>
+            <a href="#" ><img src="images/1.jpg" ></a>
+            <a href="#"><img src="images/2.jpg" ></a>
+            <a href="#"><img src="images/3.jpg" ></a>
+            <a href="#"><img src="images/4.jpg" ></a>
+            <a href="#"><img src="images/5.jpg" ></a>
+            <a href="#"><img src="images/6.jpg" ></a>
+            <a href="#"><img src="images/7.jpg" ></a>
+            <a href="#"><img src="images/8.jpg" ></a>
+            <div class="cont_bottom">
+                <input type="button" id="left">
+                <input type="button" id="right">
+            </div>
         </div>
     </div>
 </div>
@@ -209,3 +115,19 @@
 </body>
 <script src="js/ShiDa.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
